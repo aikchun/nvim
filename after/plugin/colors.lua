@@ -28,6 +28,6 @@ require("catppuccin").setup({
     no_italic = true,
 })
 
-vim.g.seoul256_italic_comments = true
+vim.g.seoul256_italic_comments = false
 
 vim.cmd.colorscheme "seoul256"
