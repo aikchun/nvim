@@ -24,10 +24,21 @@
 -- })
 -- vim.o.background = "dark" -- or "light" for light mode
 -- vim.cmd("colorscheme gruvbox")
-require("catppuccin").setup({
-    no_italic = true,
+-- require("catppuccin").setup({
+--     no_italic = true,
+-- })
+--
+-- vim.g.seoul256_italic_comments = false
+--
+-- vim.cmd.colorscheme "seoul256"
+
+vim.o.background = "dark"
+require("gruvbox").setup({
+    italic = {
+        strings = false,
+        comments = false,
+        operators = false,
+        folds = false,
+    },
 })
-
-vim.g.seoul256_italic_comments = false
-
-vim.cmd.colorscheme "seoul256"
+vim.cmd([[colorscheme gruvbox]])

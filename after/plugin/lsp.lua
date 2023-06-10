@@ -63,7 +63,7 @@ lsp.format_on_save({
         ['rust_analyzer'] = { 'rust' },
         -- if you have a working setup with null-ls
         -- you can specify filetypes it can format.
-        ['null-ls'] = { 'javascript', 'typescript', 'javascriptreact', 'typescriptreact', 'javascript.jsx',
+        ['null-ls'] = { 'html', 'javascript', 'typescript', 'javascriptreact', 'typescriptreact', 'javascript.jsx',
             'typescript.tsx', 'go' },
     }
 })

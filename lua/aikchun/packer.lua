@@ -23,6 +23,7 @@ return require('packer').startup(function(use)
     use('jose-elias-alvarez/null-ls.nvim')
 
     use 'aikchun/seoul256.nvim'
+    use { "ellisonleao/gruvbox.nvim" }
     use {
         'VonHeikemen/lsp-zero.nvim',
         requires = {
@@ -49,5 +50,9 @@ return require('packer').startup(function(use)
         config = function()
             require('Comment').setup()
         end
+    }
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
     }
 end)
